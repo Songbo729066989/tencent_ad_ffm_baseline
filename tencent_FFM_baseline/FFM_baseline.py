@@ -8,6 +8,7 @@ path='data/'
 ffm_model = xl.create_ffm()
 ffm_model.setTrain(path+'train_ffm.csv')
 ffm_model.setTest(path+'test_ffm.csv')
+ffm_model.setSigmoid()
 param = {'task':'binary', 'lr':0.01, 'lambda':0.001,'metric': 'auc','opt':'ftrl','epoch':5,'k':4,
          'alpha': 1.5, 'beta': 0.01, 'lambda_1': 0.0, 'lambda_2': 0.0}
 ffm_model.fit(param,"./model.out")
