@@ -4,7 +4,7 @@
 import xlearn as xl
 import pandas as pd
 import numpy as np
-path='data/
+path='data/'
 ffm_model = xl.create_ffm()
 ffm_model.setTrain(path+'train_ffm.csv')
 ffm_model.setTest(path+'test_ffm.csv')
